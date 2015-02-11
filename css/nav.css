@@ -1,0 +1,99 @@
+ul#nav {
+	display: block;
+	width: 100%;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    padding-left:0;
+}
+
+ul#nav li {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul#nav li:last-child {
+	float: right;
+}
+
+ul#nav li a {
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+}
+
+ul#nav li a#small-logo {
+	display: block;
+	background: url("../images/sitelogo.png") no-repeat center center;
+	background-size: 80%;
+	width: 150px;
+	height: 50px;
+}
+
+ul#nav li a#nav-search {
+	display: block;
+	width: inherit;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	padding: none;
+}
+
+ul#nav li a#nav-search input[type="text"] {
+	position: relative;
+	float: left;
+	height: 26px;
+	width: 200px;
+	border: 1px solid #873600;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+ul#nav li a#nav-search input[type=text]:focus {
+    outline: none;
+    border-color: #FF6200;
+    box-shadow: 0 0 10px #FF6200;
+    z-index: 999;
+}
+
+ul#nav li a#nav-search select {
+	position: relative;
+	float: left;
+	margin: 0 0;
+	padding: 0;
+	width: 70px;
+	height: 30px;
+	border: 1px solid #873600;
+}
+
+ul#nav li a#nav-search select:focus {
+	outline: none;
+    border-color: #FF6200;
+    box-shadow: 0 0 10px #FF6200;
+    z-index: 1;
+}
+
+ul#nav li a button.searchButton {
+	float: left;
+	height: 30px;
+	padding: 0;
+	margin: 0 0;
+}
+
+#search-ico {
+	background-image: url("../images/icons/appbar.magnify.png");
+	background-size: 100%;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	outline: none;
+}
+
+

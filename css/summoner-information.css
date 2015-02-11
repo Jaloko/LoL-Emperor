@@ -1,0 +1,1043 @@
+#summoner-header {
+	display: block;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #444;
+}
+
+#summoner-information {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#summoner-information p {
+	padding: 0;
+	margin: 0;
+}
+
+#header-content {
+	display: block;
+	width: 100%;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+ul#summoner-tabs {
+	display: block;
+	width: 100%;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    padding-left:0;
+}
+
+ul#summoner-tabs li {
+	display: inline-block;
+}
+
+ul#summoner-tabs li label a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#summoner-summary, #statistics, #match-history, #masteries, #runes {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	color: white;
+}
+
+/* Radio boxes */
+#tab1, #tab2, #tab3, #tab4, #tab5 {
+	display: none;
+}
+
+/* Tab 1 */
+input[type="radio"]#tab1:checked ~ #summoner-header ul#summoner-tabs li#summoner-tab1 label a{
+    background-color: #696969;
+    padding-top: 5px;
+}
+
+input[type="radio"]#tab1:checked ~ #summoner-content div#summoner-summary{
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+/* Tab 2 */
+input[type="radio"]#tab2:checked ~ #summoner-header ul#summoner-tabs li#summoner-tab2 label a{
+    background-color: #696969;
+    padding-top: 5px;
+}
+
+input[type="radio"]#tab2:checked ~ #summoner-content div#statistics{
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+/* Tab 3 */
+input[type="radio"]#tab3:checked ~ #summoner-header ul#summoner-tabs li#summoner-tab3 label a{
+    background-color: #696969;
+    padding-top: 5px;
+}
+
+input[type="radio"]#tab3:checked ~ #summoner-content div#match-history{
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+/* Tab 4 */
+input[type="radio"]#tab4:checked ~ #summoner-header ul#summoner-tabs li#summoner-tab4 label a{
+    background-color: #696969;
+    padding-top: 5px;
+}
+
+input[type="radio"]#tab4:checked ~ #summoner-content div#masteries{
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+/* Tab 5 */
+input[type="radio"]#tab5:checked ~ #summoner-header ul#summoner-tabs li#summoner-tab5 label a{
+    background-color: #696969;
+    padding-top: 5px;
+}
+
+input[type="radio"]#tab5:checked ~ #summoner-content div#runes{
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+#summoner-content {
+	display: block;
+	padding: 20px;
+	background-color: #696969;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+}
+
+#summoner-icon {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#summoner-profile {
+	float: left;
+	height: 100px;
+}
+
+#summoner-profile h3 {
+	margin-top: 1em;
+}
+
+
+
+/* Ranked Information */
+
+
+#solo-5x5 {
+	float: left;
+}
+
+#team-3x3 {
+	margin:0 auto;
+}
+
+#team-5x5 {
+	float: right;
+}
+
+#summoner-content .row {
+	display: block;
+	background-color: #444;
+	border-radius: 5px;
+	margin-top: 20px;
+	text-align: center;
+	padding: 20px;
+}
+
+#summoner-content .row:first-child {
+	margin-top: 0px;
+}
+
+#summoner-content .row h2 {
+	padding-bottom: 20px;
+}
+
+.ranked {
+	min-height: 332px;
+	width: 250px;
+	padding: 20px;
+	background-color: #333;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.ranked-header {
+	display: block;
+	width: 100%;
+}
+
+.ranked-bade {
+	display: block;
+	width: 100%;
+}
+
+.ranked-information {
+	display: block;
+	width: 100%;
+}
+
+
+.champ {
+	width: inherit;
+	display: inline-block;
+	padding: 20px;
+	margin: 10px;
+	background-color: #333;
+	border-radius: 5px;
+}
+
+.champ-image-container {
+	float: left;
+	height: 60px;
+	padding-right: 20px;
+}
+
+.champ-content {
+	float: left;
+}
+
+table {
+	border-collapse: collapse;
+	border-radius: 5px;
+}
+
+
+
+th, td {
+	height: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #222;	
+	border: 1px solid #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+tr {
+	height: 20px;
+}
+
+td {
+	background-color: #333;
+}
+
+
+/*---------------------
+-----Match History-----
+---------------------*/
+
+.match {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background-color: #333;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.match-result {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.Victory {
+	background-color: green;
+}
+
+.Defeat {
+	background-color: #D40000;
+}
+
+.match-type {
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #222;
+}
+
+.date {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+
+.mode {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+
+.duration {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+
+.match-details {
+	display: block;
+	width: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.summoner-stats {
+	display: inline-block;
+	float: left;
+	width: 43%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-bottom-left-radius: 5px;
+}
+
+.top-col {
+	display: block;
+	width: 100%;
+	height: 60%;
+}
+
+.champion {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	padding-left: 20px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	height: 100%;
+}
+
+.summoner-build {
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+
+.utility-spells {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.spell1 {
+	display:block;
+	background-color: #222;
+	margin-right: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.spell2 {
+	display:block;
+	margin-top: 10px;
+	background-color: #222;
+	margin-right: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.items {
+	display: inline-block;
+	float: left;
+	width: 135px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.item {
+	display:inline-block;
+	float: left;
+	margin: 5px;
+	background-color: #222;
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+}
+
+.trinket-slot {
+	display: inline-block;
+	float: left;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.trinket {
+	display: inline-block;
+	float: left;
+	width: 45px;
+	height: 45px;
+	background-color: #222;
+	border-radius: 5px;
+}
+
+.bottom-col {
+	display: block;
+	width: 100%;
+	height: 40%;
+}
+
+.kda {
+	display: inline-block;
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+.gold-creeps {
+	display: inline-block;
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+.team-stats {
+	display: inline-block;
+	float: left;
+	width: 57%;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.allied-team {
+	display: inline-block;
+	float: left;
+	padding: 1%;
+	width: 48%;
+}
+
+.enemy-team {
+	display: inline-block;
+	float: left;
+	padding: 1%;
+	width: 48%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.team-row {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+}
+
+.champion-small {
+	display: inline-block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-color: #222;
+	border-radius: 5px;
+}
+
+.team-member {
+	display: inline-block;
+	text-align: left;
+	line-height: 30px;
+	float: left;
+	margin-left: 5px;
+	width: 216px;
+	height: 30px;
+	background-color: #222;
+	border-radius: 5px;
+}
+
+.team-member p {
+	padding-left: 10px;
+}
+
+/*--------------------------
+---------Mastery Page-------
+--------------------------*/
+
+#mastery-pages {
+	display: block;
+	width: 100%;
+	background-color: #333;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#mastery-body {
+	display: block;
+	width: 100%;
+	height: 531px;
+	background-image: url("../images/lol-images/masteries/masteryback.jpg");
+	background-size: 100%;
+	border-radius: 5px;
+}
+
+#mastery-body .first-col {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 34%;
+}
+
+#mastery-body .second-col {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 32%;
+}
+
+#mastery-body .third-col {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 34%;
+}
+
+#mastery-body .col {
+	display: inline-block;
+	float: left;
+	width: 60px;
+	height: 90%;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.mastery-padding-box {
+	display: block;
+	width: 90%;
+	height: inherit;
+	padding: 7%;
+}
+
+.mastery-padding-box2 {
+	display: block;
+	width: 100%;
+	height: inherit;
+	margin-top: 2px;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+.mastery-box {
+	display: block;
+	border-radius: 5px;
+	border: 1px solid yellow;
+	width: 55px;
+	height: 55px;
+	margin-bottom: 20px;
+	background-color: #111;
+}
+
+.empty-mastery-box {
+	display: block;
+	width: 58px;
+	height: 58px;
+	margin-bottom: 19px;
+}
+
+.rank-box {
+	display:inline-block;
+	margin-top: 43px;
+	margin-left: 24px;
+	background-color: #000;
+	opacity: 0.9;
+	border-radius: 5px;
+	border: 1px solid yellow;
+	width: 30px;
+	height: 20px;
+}
+
+.mastery-total {
+	display: block;
+	width: 90%;
+}
+
+.not-ranked {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#masteries input[type="radio"] {
+	display: none;
+}
+
+#mastery-page0, #mastery-page1, #mastery-page2, #mastery-page3, #mastery-page4, #mastery-page5, #mastery-page6, #mastery-page7, #mastery-page8, #mastery-page9, #mastery-page10, #mastery-page11, #mastery-page12, #mastery-page13, #mastery-page14, #mastery-page15, #mastery-page16, #mastery-page17, #mastery-page18, #mastery-page19{
+	display: none;
+}
+
+#mastery-pages ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mastery-pages ul li {
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#mastery-pages ul label {
+	display: block;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #222;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+
+input[type="radio"]#mastery0:checked ~ #mastery-body div#mastery-page0{
+    display: block;
+}
+
+input[type="radio"]#mastery0:checked ~ #mastery-pages label#mastery-tab0{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery1:checked ~ #mastery-body div#mastery-page1{
+    display: block;
+}
+
+input[type="radio"]#mastery1:checked ~ #mastery-pages label#mastery-tab1{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery2:checked ~ #mastery-body div#mastery-page2{
+    display: block;
+}
+
+input[type="radio"]#mastery2:checked ~ #mastery-pages label#mastery-tab2{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery3:checked ~ #mastery-body div#mastery-page3{
+    display: block;
+}
+
+input[type="radio"]#mastery3:checked ~ #mastery-pages label#mastery-tab3{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery4:checked ~ #mastery-body div#mastery-page4{
+    display: block;
+}
+
+input[type="radio"]#mastery4:checked ~ #mastery-pages label#mastery-tab4{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery5:checked ~ #mastery-body div#mastery-page5{
+    display: block;
+}
+
+input[type="radio"]#mastery5:checked ~ #mastery-pages label#mastery-tab5{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery6:checked ~ #mastery-body div#mastery-page6{
+    display: block;
+}
+
+input[type="radio"]#mastery6:checked ~ #mastery-pages label#mastery-tab6{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery7:checked ~ #mastery-body div#mastery-page7{
+    display: block;
+}
+
+input[type="radio"]#mastery7:checked ~ #mastery-pages label#mastery-tab7{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery8:checked ~ #mastery-body div#mastery-page8{
+    display: block;
+}
+
+input[type="radio"]#mastery8:checked ~ #mastery-pages label#mastery-tab8{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery9:checked ~ #mastery-body div#mastery-page9{
+    display: block;
+}
+
+input[type="radio"]#mastery9:checked ~ #mastery-pages label#mastery-tab9{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery10:checked ~ #mastery-body div#mastery-page10{
+    display: block;
+}
+
+input[type="radio"]#mastery10:checked ~ #mastery-pages label#mastery-tab10{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery11:checked ~ #mastery-body div#mastery-page11{
+    display: block;
+}
+
+input[type="radio"]#mastery11:checked ~ #mastery-pages label#mastery-tab11{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery12:checked ~ #mastery-body div#mastery-page12{
+    display: block;
+}
+
+input[type="radio"]#mastery12:checked ~ #mastery-pages label#mastery-tab12{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery13:checked ~ #mastery-body div#mastery-page13{
+    display: block;
+}
+
+input[type="radio"]#mastery13:checked ~ #mastery-pages label#mastery-tab13{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery14:checked ~ #mastery-body div#mastery-page14{
+    display: block;
+}
+
+input[type="radio"]#mastery14:checked ~ #mastery-pages label#mastery-tab14{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery15:checked ~ #mastery-body div#mastery-page15{
+    display: block;
+}
+
+input[type="radio"]#mastery15:checked ~ #mastery-pages label#mastery-tab15{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery16:checked ~ #mastery-body div#mastery-page16{
+    display: block;
+}
+
+input[type="radio"]#mastery16:checked ~ #mastery-pages label#mastery-tab16{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery17:checked ~ #mastery-body div#mastery-page17{
+    display: block;
+}
+
+input[type="radio"]#mastery17:checked ~ #mastery-pages label#mastery-tab17{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery18:checked ~ #mastery-body div#mastery-page18{
+    display: block;
+}
+
+input[type="radio"]#mastery18:checked ~ #mastery-pages label#mastery-tab18{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#mastery19:checked ~ #mastery-body div#mastery-page19{
+    display: block;
+}
+
+input[type="radio"]#mastery19:checked ~ #mastery-pages label#mastery-tab19{
+    background-color: #FF6200;
+}
+
+
+/*------------------------
+------Rune Pages----------
+------------------------*/
+
+#rune-pages {
+	display: block;
+	width: 100%;
+	background-color: #333;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#rune-body {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 78%;
+	height: 477px;
+	background-image: url("../images/lol-images/runes/runesback.png");
+	background-size: 100%;
+	border-radius: 5px;
+}
+
+#rune-statistics {
+	display: inline-block;
+	float: left;
+	text-align: left;
+	background-color: #333;
+	min-height: 460px;
+	padding: 1%;
+	margin-left: 2%;
+	width: 18%;
+	border-radius: 5px;
+}
+
+#rune-pages ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#rune-pages ul li {
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#rune-pages ul label {
+	display: block;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #222;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+
+.small-rune {
+	position: absolute;
+	width: 53px;
+	height: 60px;
+}
+
+.large-rune {
+	position: absolute;
+	width: 110px;
+	height: 110px;
+}
+
+#runes input[type="radio"] {
+	display: none;
+}
+
+
+#rune-page0, #rune-page1, #rune-page2, #rune-page3, #rune-page4, #rune-page5, #rune-page6, #rune-page7, #rune-page8, #rune-page9, #rune-page10, #rune-page11, #rune-page12, #rune-page13, #rune-page14, #rune-page15, #rune-page16, #rune-page17, #rune-page18, #rune-page19{
+    display: none;
+}
+
+
+input[type="radio"]#rune0:checked ~ #runes-container div#rune-page0{
+    display: block;
+}
+
+input[type="radio"]#rune0:checked ~ #rune-pages label#rune-tab0{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune1:checked ~ #runes-container div#rune-page1{
+    display: block;
+}
+
+input[type="radio"]#rune1:checked ~ #rune-pages label#rune-tab1{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune2:checked ~ #runes-container div#rune-page2{
+    display: block;
+}
+
+input[type="radio"]#rune2:checked ~ #rune-pages label#rune-tab2{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune3:checked ~ #runes-container div#rune-page3{
+    display: block;
+}
+
+input[type="radio"]#rune3:checked ~ #rune-pages label#rune-tab3{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune4:checked ~ #runes-container div#rune-page4{
+    display: block;
+}
+
+input[type="radio"]#rune4:checked ~ #rune-pages label#rune-tab4{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune5:checked ~ #runes-container div#rune-page5{
+    display: block;
+}
+
+input[type="radio"]#rune5:checked ~ #rune-pages label#rune-tab5{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune6:checked ~ #runes-container div#rune-page6{
+    display: block;
+}
+
+input[type="radio"]#rune6:checked ~ #rune-pages label#rune-tab6{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune7:checked ~ #runes-container div#rune-page7{
+    display: block;
+}
+
+input[type="radio"]#rune7:checked ~ #rune-pages label#rune-tab7{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune8:checked ~ #runes-container div#rune-page8{
+    display: block;
+}
+
+input[type="radio"]#rune8:checked ~ #rune-pages label#rune-tab8{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune9:checked ~ #runes-container div#rune-page9{
+    display: block;
+}
+
+input[type="radio"]#rune9:checked ~ #rune-pages label#rune-tab9{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune10:checked ~ #runes-container div#rune-page10{
+    display: block;
+}
+
+input[type="radio"]#rune10:checked ~ #rune-pages label#rune-tab10{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune11:checked ~ #runes-container div#rune-page11{
+    display: block;
+}
+
+input[type="radio"]#rune11:checked ~ #rune-pages label#rune-tab11{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune12:checked ~ #runes-container div#rune-page12{
+    display: block;
+}
+
+input[type="radio"]#rune12:checked ~ #rune-pages label#rune-tab12{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune13:checked ~ #runes-container div#rune-page13{
+    display: block;
+}
+
+input[type="radio"]#rune13:checked ~ #rune-pages label#rune-tab13{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune14:checked ~ #runes-container div#rune-page14{
+    display: block;
+}
+
+input[type="radio"]#rune14:checked ~ #rune-pages label#rune-tab14{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune15:checked ~ #runes-container div#rune-page15{
+    display: block;
+}
+
+input[type="radio"]#rune15:checked ~ #rune-pages label#rune-tab15{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune16:checked ~ #runes-container div#rune-page16{
+    display: block;
+}
+
+input[type="radio"]#rune16:checked ~ #rune-pages label#rune-tab16{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune17:checked ~ #runes-container div#rune-page17{
+    display: block;
+}
+
+input[type="radio"]#rune17:checked ~ #rune-pages label#rune-tab17{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune18:checked ~ #runes-container div#rune-page18{
+    display: block;
+}
+
+input[type="radio"]#rune18:checked ~ #rune-pages label#rune-tab18{
+    background-color: #FF6200;
+}
+
+input[type="radio"]#rune19:checked ~ #runes-container div#rune-page19{
+    display: block;
+}
+
+input[type="radio"]#rune19:checked ~ #rune-pages label#rune-tab19{
+    background-color: #FF6200;
+}
+
+
+
+
